@@ -17,43 +17,41 @@
         <dialog id="confirmDeleteDialog">
             <form method="dialog">
                 <input type="hidden" id="idToDelete" value="">
-                <h1>Estas seguro de Eliminar el siguiente registro:</h1>
-                <p>Tarea: <span id="spanName"></span> </p>
-                <p>Descripcion:<span id="spanDescription"></span> </p>
-                <p>Fecha: <span id="spanDate"></span> </p>
+                <h4>¿Estas seguro de eliminar el siguiente registro?</h4>
+                <p><b> Tarea: </b><span id="spanName"></span> </p>
+                <p><b> Descripcion: </b><span id="spanDescription"></span> </p>
+                <p><b> Fecha: </b><span id="spanDate"></span> </p>
                 <button id="confirmDeleteButton" type="submit">Eliminar</button>
                 <button id="cancelDeleteButton">Cancelar</button>
-        </form>
+            </form>
         </dialog>
         <h1>Lista de Tareas</h1>
         <div id="frm">
             <input type="hidden" id="id" value="">
             <form action="#" method="post">
                 <div class="field">
-                    <label for="name">Tarea:</label>
-                    <input type="text" id="name">
+                    <label for="name"><b> Tarea:</b></label>
+                    <input type="text" id="name" placeholder="Agregar tarea...">
                 </div>
                 <div class="field">
-                    <label for="description">Descripcion:</label>
-                    <input type="text" id="description">
+                    <label for="description"><b> Descripcion:</b></label>
+                    <input type="text" id="description" placeholder="Agregar descripción...">
                 </div>
                 <div class="field">
-                    <label for="date">Fecha:</label>
+                    <label for="date"><b> Fecha:</b></label>
                     <input type="date" id="date">
                 </div>
                 <input type="button" id="task_submit" value="Enviar" onclick="insert()">
 
             </form>
-            <div>
-                <h2>Lista de Tareas a Realizar:</h2>
+            <div class="content">
+                <h2>Lista de Tareas a Realizar</h2>
                 <table class="table table-striped" id="tasks">
                     <tr>
                         <th>Tarea</th>
                         <th>Descripcion</th>
                         <th>Fecha</th>
                         <th>Estado</th>
-                        <th></th>
-                        <th></th>
                         <th></th>
                     </tr>
 

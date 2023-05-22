@@ -1,15 +1,92 @@
 body{
-    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    margin-bottom: 15rem;
 }
 .field{
     margin-top: 1em;
     margin-bottom: 1em;
-    
 }
 .container{
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    border-radius: 1em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 5px;
 }
-.tasks{
-    padding: 3rem;
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#task_submit{
+    padding: 10px 40px;
+    background-color: lightskyblue;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 17px;
+}
+
+#confirmDeleteDialog{
+    border-radius: 10px;
+    background-color: lightgray;
+    border-color: gray;
+    border-width: 2px;
+    text-align: center;
+}
+
+.content{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#name{
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+#description{
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+#date{
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+#confirmDeleteButton{
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 3px 20px;
+    border-color: gray;
+}
+
+#cancelDeleteButton{
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 3px 20px;
+    border-color: gray;
+}
+
+.mi-boton {
+    background-color: lightskyblue;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    border-width: 0px;
+  }
+
+  .tasks-data {
+    background-color: lightgrey;
+    color: black;
+  }
+  

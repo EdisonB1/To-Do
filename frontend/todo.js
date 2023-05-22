@@ -81,13 +81,16 @@ function renderTasks(tasks){
         const colUpdate = document.createElement('button');
         colUpdate.innerHTML = 'Editar';
         colUpdate.setAttribute('onclick', `fillForm('${tasks[i].id}','${tasks[i].name}', '${tasks[i].description}', '${tasks[i].date}')`);
+        colUpdate.classList.add('mi-boton');
 
         const colDelete = document.createElement('button');
         colDelete.innerHTML = 'Eliminar';
         colDelete.setAttribute('onclick', `confirmDelete('${tasks[i].id}','${tasks[i].name}', '${tasks[i].description}', '${tasks[i].date}')`);
+        colDelete.classList.add('mi-boton');
 
         row = document.createElement('tr');
         row.setAttribute('class','tasks-data');
+
         row.appendChild(colName);
         row.appendChild(colDescription);
         row.appendChild(colDate);
@@ -123,13 +126,13 @@ function confirmDelete(id, name, description, date){
     const confirmDeleteDialog = document.getElementById('confirmDeleteDialog');
     confirmDeleteDialog.showModal();
 
-    const spanName = document.getElementById('name');
+    const spanName = document.getElementById('spanName');
     spanName.innerHTML = name;
     
-    const spanDescription = document.getElementById('description');
+    const spanDescription = document.getElementById('spanDescription');
     spanDescription.innerHTML = description;
     
-    const spanDate = document.getElementById('date');
+    const spanDate = document.getElementById('spanDate');
     spanDate.innerHTML = date;
 
     const txtId = document.getElementById('idToDelete');
